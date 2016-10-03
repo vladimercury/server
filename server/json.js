@@ -5,5 +5,5 @@ exports.read = function(file){
 }
 
 exports.write = function(file, data){
-	fs.writeFileSync(file, data);
+	fs.writeFileSync(file, JSON.stringify(data));
 }
